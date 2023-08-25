@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="templtes/styles.css"> -->
+    <title>Home page</title>
+    <style>
+        body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f3f4;
+    min-height: 100%;
+}
+
+.container {
+    
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    min-width: 300px;
+    
+  }
+
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 0.7em;
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .input-group input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <img src="/Maaz_2102050010/24.08.23/templtes/Landing page-bro.png" width="45%"/>
+    <div style="width:40%;">
+
+    <div class="container">
+        <h1 class="title">
+        Welcome to Student Portal</h1>
+        <p style="text-align: center;">SignUp if you don't have it</p>
+        <div class="input-group">
+            <button onclick="navigateToLoginPage()" style="background: linear-gradient(to right , #0056b3 , #007bff) !important;font-weight: 700; font-size: 16px; border: 2px solid #d2d2d2; color: #000; border-radius: 7px;">Login</button>
+            <button  onclick="navigateToSignupPage()" style="background: #fefefe !important; font-weight: 700; font-size: 16px; border: 2px solid #d2d2d2; color: #000; border-radius: 7px;" type="submit" <a href="signup_page.html"></a>Sign Up</button>
+          </div>
+    </div>
+            
+</div>
+<script>
+    function navigateToLoginPage() {
+        // Replace 'login.html' with the actual URL of your login page
+        window.open('login_page.html', '_blank');
+        
+    }
+    function navigateToSignupPage() {
+        // Replace 'login.html' with the actual URL of your login page
+        window.open('signup_page.html', '_blank');
+    }
+    </script>
+</body>
+</html>
